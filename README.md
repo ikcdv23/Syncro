@@ -17,7 +17,7 @@ model User {
 // 2. EL PROYECTO / EQUIPO
 model Project {
   id            String          @id @default(uuid())
-  name          String
+  name          String     
   description   String?         
   members       ProjectMember[] // Relación: Miembros del proyecto
   tasks         Task[]          // Relación: Tareas del proyecto
